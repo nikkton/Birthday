@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Happy Birthday, Priyanka 🌸</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Caveat:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Ambient layer: hearts, sparkles, butterflies float here, behind everything -->
+<div class="ambient-layer" id="ambientLayer" aria-hidden="true"></div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__bg" style="background-image:url('assets/photos/IMG_5271.jpg')"></div>
+  <div class="hero__veil"></div>
+  <div class="hero__content">
+    <p class="eyebrow hero__eyebrow">for my favourite human,</p>
+    <h1 class="hero__title">
+      Happy Birthday,<br>
+      <span class="script">Priyanka</span> <span class="heart-glow">❤️</span>
+    </h1>
+    <p class="hero__subtitle">Some friendships become home.<br>Thank you for becoming mine.</p>
+    <button class="btn btn--glow" id="openSurpriseBtn">
+      <span>✨ Open Your Surprise ✨</span>
+    </button>
+  </div>
+  <div class="hero__scroll-hint" aria-hidden="true">
+    <span></span>
+  </div>
+</section>
+
+<!-- ============ MAIN (revealed after hero button) ============ -->
+<main id="mainContent" class="main-content">
+
+  <!-- Floating music player -->
+  <div class="music-player" id="musicPlayer">
+    <button class="music-player__toggle" id="musicToggle" aria-label="Play music">
+      <span class="music-player__icon">🎵</span>
+    </button>
+    <div class="music-player__note glass" id="musicNote">
+      <p>Press play&hellip; this page has its own soundtrack.</p>
+    </div>
+    <audio id="bgAudio" src="assets/music/night-changes.mp3" loop preload="none"></audio>
+    <div class="music-player__bars" id="musicBars" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <!-- ============ INTRO LINE ============ -->
+  <section class="section intro-line reveal">
+    <p class="script intro-line__text">a little scrapbook of us, Priyanka&hellip;</p>
+  </section>
+
+  <!-- ============ MEMORY JOURNEY ============ -->
+  <section class="section memory-journey" id="memories">
+    <div class="section-heading reveal">
+      <p class="eyebrow">the memory journey</p>
+      <h2>Every little moment, kept safe</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline__spine" aria-hidden="true"></div>
+
+      <!-- Coffee dates -->
+      <article class="memory reveal" data-side="left">
+        <div class="memory__photo">
+          <img src="assets/photos/IMG_0151.jpg" alt="Priyanka and Muskan smiling together" loading="lazy">
+        </div>
+        <div class="memory__card glass">
+          <span class="memory__icon">☕</span>
+          <h3>Coffee dates</h3>
+          <p>Every cup we ever shared came with hours of talking about absolutely nothing and everything at once.</p>
+        </div>
+      </article>
+
+      <!-- Food -->
+      <article class="memory reveal" data-side="right">
+        <div class="memory__photo">
+          <img src="assets/photos/IMG_9164.jpg" alt="Sharing noodles and laughing" loading="lazy">
+        </div>
+        <div class="memory__card glass">
+          <span class="memory__icon">🥪</span>
+          <h3>Sandwiches, appes, cutlets, idlis&hellip;</h3>
+          <p>We turned every plate of food into an occasion. No memory of us is ever complete without something delicious in the middle of it.</p>
+        </div>
+      </article>
+
+      <!-- Moon watching -->
+      <article class="memory reveal" data-side="left">
+        <div class="memory__photo">
+          <img src="assets/photos/IMG_9275.jpg" alt="Moon watching together at night" loading="lazy">
+        </div>
+        <div class="memory__card glass">
+          <span class="memory__icon">🌙</span>
+          <h3>Moon watching</h3>
+          <p>Just us, the sky, and conversations that felt bigger than both of us.</p>
+        </div>
+      </article>
+
+      <!-- Marine ride -->
+      <article class="memory reveal" data-side="right">
+        <div class="memory__photo">
+          <img src="assets/photos/IMG_7098.jpg" alt="On the marine ride, laughing" loading="lazy">
+        </div>
+        <div class="memory__card glass">
+          <span class="memory__icon">🌊</span>
+          <h3>Marine ride</h3>
+          <p>Wind in our hair, the city lights below us, and that particular kind of happy that only exists when you're right beside me.</p>
+        </div>
+      </article>
+
+      <!-- Kiki Cafe -->
+      <article class="memory reveal" data-side="left">
+        <div class="memory__photo">
+          <img src="assets/photos/IMG_1853.jpg" alt="At Kiki Cafe together" loading="lazy">
+        </div>
+        <div class="memory__card glass">
+          <span class="memory__icon">🍽</span>
+          <h3>Kiki Cafe</h3>
+          <p>Our little hideout. Same table, same nonsense, same us.</p>
+        </div>
+      </article>
+
+      <!-- Movie day -->
+      <article class="memory reveal" data-side="right">
+        <div class="memory__photo">
+          <img src="assets/photos/IMG_5087.jpg" alt="Movie day together" loading="lazy">
+        </div>
+        <div class="memory__card glass">
+          <span class="memory__icon">🎬</span>
+          <h3>Movie day</h3>
+          <p>Popcorn, red seats, and you making peace signs in the dark instead of watching the screen.</p>
+        </div>
+      </article>
+
+      <!-- Scooty learning — the big one -->
+      <article class="memory memory--hero reveal" data-side="center">
+        <div class="memory__card memory__card--hero glass">
+          <span class="memory__icon memory__icon--big">🛵</span>
+          <h3>5 AM scooty learning days</h3>
+          <p>
+            This one's my favourite. The empty roads, the wobbly starts, sitting together in the park afterwards
+            laughing over absolutely nothing. And when you fell&hellip; I swear my heart almost stopped.
+            You scared me so much. 🤧❤️
+          </p>
+          <div class="memory__photo-duo">
+            <img src="assets/photos/IMG_7160.jpg" alt="On the road together at 5am" loading="lazy">
+            <img src="assets/photos/IMG_1962.jpg" alt="In the park afterwards" loading="lazy">
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ FRIENDSHIP LETTER ============ -->
+  <section class="section letter-section" id="letter">
+    <div class="section-heading reveal">
+      <p class="eyebrow">just for you</p>
+      <h2>A little letter</h2>
+    </div>
+
+    <div class="envelope-wrap reveal">
+      <div class="envelope" id="envelope">
+        <div class="envelope__back"></div>
+        <div class="envelope__letter" id="envelopeLetter">
+          <p class="script envelope__letter-to">My sweetest girl,</p>
+          <div class="envelope__letter-body" id="letterTypewriter"></div>
+        </div>
+        <div class="envelope__flap"></div>
+        <div class="envelope__front"></div>
+        <div class="envelope__seal">💌</div>
+      </div>
+      <p class="envelope__hint" id="envelopeHint">tap the envelope to open it</p>
+    </div>
+  </section>
+
+  <!-- ============ APPRECIATION ============ -->
+  <section class="section appreciation">
+    <div class="section-heading reveal">
+      <p class="eyebrow">what you are to me</p>
+      <h2>Everything good, honestly</h2>
+    </div>
+
+    <div class="appreciation__grid">
+      <div class="appreciation__card glass reveal"><span>❤️</span><p>Sweetest soul</p></div>
+      <div class="appreciation__card glass reveal"><span>🌸</span><p>Most caring person</p></div>
+      <div class="appreciation__card glass reveal"><span>🤍</span><p>Full of love</p></div>
+      <div class="appreciation__card glass reveal"><span>🍳</span><p>Amazing chef</p></div>
+      <div class="appreciation__card glass reveal"><span>☕</span><p>Coffee partner</p></div>
+      <div class="appreciation__card glass reveal"><span>😂</span><p>Best bakchodi partner</p></div>
+      <div class="appreciation__card glass reveal"><span>🌙</span><p>My comfort person</p></div>
+      <div class="appreciation__card glass reveal"><span>🫶</span><p>Forever grateful for our friendship</p></div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section gallery" id="gallery">
+    <div class="section-heading reveal">
+      <p class="eyebrow">the scrapbook</p>
+      <h2>Us, in no particular order</h2>
+    </div>
+
+    <div class="gallery__grid">
+      <div class="polaroid reveal"><img src="assets/photos/IMG_5286.jpg" alt="Memory together" loading="lazy"></div>
+      <div class="polaroid reveal"><img src="assets/photos/IMG_7078.jpg" alt="Memory together" loading="lazy"></div>
+      <div class="polaroid reveal"><img src="assets/photos/IMG_1684.jpg" alt="Memory together" loading="lazy"></div>
+      <div class="polaroid reveal"><img src="assets/photos/IMG_9953.jpg" alt="Memory together" loading="lazy"></div>
+      <div class="polaroid reveal"><img src="assets/photos/IMG_7634.jpg" alt="Memory together" loading="lazy"></div>
+      <div class="polaroid reveal"><img src="assets/photos/04E2B769-AF54-4255-A3FE-26B66D7293DA.jpg" alt="Memory together" loading="lazy"></div>
+      <div class="polaroid reveal"><img src="assets/photos/IMG_5182.jpg" alt="Memory together" loading="lazy"></div>
+    </div>
+  </section>
+
+  <!-- ============ SECRET MESSAGE ============ -->
+  <section class="section secret reveal">
+    <button class="btn btn--outline" id="secretBtn">💌 Open Secret Message</button>
+    <div class="secret__message glass" id="secretMessage">
+      <p>If I could choose my best friend again&hellip;<br>
+      I'd still choose you.<br>
+      Every single time.<br>
+      In every lifetime.</p>
+    </div>
+  </section>
+
+  <!-- ============ ENDING ============ -->
+  <section class="section ending" id="ending">
+    <canvas id="confettiCanvas"></canvas>
+    <div class="ending__heart-wrap reveal">
+      <div class="ending__heart">
+        <img src="assets/photos/IMG_5315.jpg" alt="Priyanka and Muskan">
+      </div>
+    </div>
+    <p class="ending__line reveal">Distance changes nothing.</p>
+    <p class="ending__line ending__line--big script reveal">You'll always be my favourite person. ❤️</p>
+    <p class="ending__signature reveal">Made with endless love by <span class="script">Muskan</span></p>
+  </section>
+
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
